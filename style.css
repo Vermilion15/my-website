@@ -1,0 +1,235 @@
+
+
+section{
+    padding-top: 100px;
+    position: relative;
+}
+
+section::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    color: rgb(128, 128, 128);
+    font-size: 72px;
+    top: 10px;
+    left: -20px;
+}
+
+.navbar{
+    background-color:#ffff ;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.images{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.btn{
+    border: 3px solid #000;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.btn:hover, .btn.active {
+    background-color: #000;
+    color: #ffff;
+}
+
+
+.arrow{
+    margin-top: 20px;
+}
+
+.home img{
+    width: 100%;
+}
+.home .arrow .arrow-img{
+    width:60px ;
+    height: 60px;
+}
+
+#arrow{
+    animation:  2s UpDown infinite;
+}
+
+.about::before{
+    content: "About";
+}
+.about-item{
+    margin-top: 50px;
+}
+
+.about-item-detail{
+    display: none;
+}
+.about-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    padding-top: 10px;
+}
+
+.skills{
+    margin-top: 20px;
+}
+
+.skills::before{
+    content: "Skills";
+}
+
+
+.skil-name{
+    background-color: gray;
+    text-align: right;
+    
+}
+
+.skill-bar{
+    font-weight: 700;
+}
+
+.html-bar{
+    background-color: #ffff00;
+    padding: 5px 15px 5px 0;
+    width:90%;
+}
+
+.css-bar{
+    background-color: #964B00;
+    padding: 5px 15px 5px 0;
+    width:80%;
+}
+
+.js-bar{
+    background-color: #a52a2a;
+    padding: 5px 15px 5px 0;
+    width:80%;
+}
+
+.react-bar{
+    background-color: #fa8072;
+    padding: 5px 15px 5px 0;
+    width:70%;
+}
+
+.vue-bar{
+    background-color: #000080;
+    padding: 5px 15px 5px 0;
+    width:60%;
+}
+
+.work::before{
+    content: "Work";
+}
+
+.work-items{
+    position: relative;
+}
+
+.work-items:hover::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0,0.5);
+    width : 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.work-img{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "work-1 work-2" 
+                            "work-3 work-3";
+    gap: 16px;
+}
+
+.work-img  img{
+    width: 100%;
+}
+#work-1{
+    grid-area: work-1;
+}
+
+#work-1:hover::after{
+    content: "Web Development";
+}
+
+#work-2{
+    grid-area: work-2;
+}
+
+#work-2:hover::after{
+    content:"UI Design"
+}
+
+#work-3{
+    grid-area: work-3;
+}
+
+#work-3:hover::after{
+    content: "Software Engineering";
+}
+
+.contact::before{
+    content: "Contact";
+}
+
+.form{
+    padding-bottom: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 64px 32px;
+}
+
+.contact{
+    margin-top: 30px;
+    padding-bottom: 120px;
+}
+
+.col > img {
+    width: 30px;
+    height: 30px;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+@media only  screen and (max-width:768px){
+    .home img {
+        width : 50%;
+    }
+}
+
+@media only screen and (max-width:576px){
+    section::before{
+        left : -5px;
+        font-size : 60px
+    }
+}
+
+@keyframes UpDown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+

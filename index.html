@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Animate CSS Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Local Css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>My Project</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#">Chatilon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Works</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home container">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8 profile animate__animated animate__fadeIn ">
+          <h3>Hi! I am</h3>
+          <h1>Ash De Chatilon</h1>
+          <p>I am FrontEnd Developer</p>
+          <a href="" class="btn">Resume</a>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+        <div class="col-12 col-md-4 img-profile animate__animated animate__fadeIn d-flex justify-content-md-end justify-content-center">
+          <img src="assets/ashel.jpg" alt="profile.jpg" class="images" />
+        </div>
+      </div>
+      <a href="#about" class="arrow w-100 d-flex align-items-center flex-column mt-4 text-decoration-none">
+        <div  class=" text-dark">More Info</div>
+        <img
+          src="Portfolio/images/arrow.svg"
+          alt="Arrow"
+          class="arrow-img"
+          id="arrow"
+        />
+      </a>
+    </section>
+
+    <section id="about" class="about container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        quibusdam fugiat placeat nisi eligendi rerum omnis consequuntur suscipit
+        laudantium ut.
+      </p>
+      <div class="about-exp">
+        <div class="about-item">
+          <div class="about-item-header">
+            <div>
+              <h5>Mechanic Internship</h5>
+              <p>Auto 2000 (Feb 2022 - May 2022)</p>
+            </div>
+            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+          </div>
+          <p class="about-item-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            error pariatur officiis quibusdam officia soluta deleniti expedita
+            aut aperiam fuga quas vero quisquam earum quae fugit dolore in ullam
+            necessitatibus, minima cupiditate deserunt debitis! Amet repudiandae
+            repellat consequatur, iure dicta earum similique doloribus eum
+            fugiat velit illum rerum voluptatibus debitis!
+          </p>
+        </div>
+        <div class="about-item">
+          <div class="about-item-header">
+            <div>
+              <h5>Freelance Web Developer</h5>
+              <p>FastWork (Sep 2023 - Now)</p>
+            </div>
+            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+          </div>
+          <p class="about-item-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            error pariatur officiis quibusdam officia soluta deleniti expedita
+            aut aperiam fuga quas vero quisquam earum quae fugit dolore in ullam
+            necessitatibus, minima cupiditate deserunt debitis! Amet repudiandae
+            repellat consequatur, iure dicta earum similique doloribus eum
+            fugiat velit illum rerum voluptatibus debitis!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work container">
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-md-5">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, asperiores commodi perspiciatis molestias rerum
+            aspernatur repellat deleniti voluptatem sint, minima eos optio
+            quaerat! Cumque blanditiis reiciendis dicta nihil cum fugit tempora
+            sed ipsam cupiditate totam dolore exercitationem voluptas sint, ab
+            distinctio dolorem ut dignissimos harum libero et alias quae vero.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 work-img">
+          <div class="work-items" id="work-1">
+            <img src="Portfolio/images/work-1.png" alt="work-1" />
+          </div>
+          <div class="work-items" id="work-2">
+            <img src="Portfolio/images/work-2.png" alt="work-2" />
+          </div>
+          <div class="work-items" id="work-3">
+            <img src="Portfolio/images/work-3.png" alt="work-3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <h5>These are My Skills in Programming</h5>
+      <p class="fw-bold name">HTML</p>
+      <div class="skil-name">
+        <div class="skill-bar html-bar">90%</div>
+      </div>
+      <br />
+      <p class="fw-bold name">CSS</p>
+      <div class="skil-name">
+        <div class="skill-bar css-bar">80%</div>
+      </div>
+      <br />
+      <p class="fw-bold name">Javascript</p>
+      <div class="skil-name">
+        <div class="skill-bar js-bar">80%</div>
+      </div>
+      <br />
+      <p class="fw-bold name">React Js</p>
+      <div class="skil-name">
+        <div class="skill-bar react-bar">70%</div>
+      </div>
+      <br />
+      <p class="fw-bold name">Vue Js</p>
+      <div class="skil-name">
+        <div class="skill-bar vue-bar">60%</div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="row gap-5 d-flex align-items-center">
+        <div class=" col-12 col-md-6 pt-5">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+          sapiente? Assumenda voluptatum architecto sequi illum alias. Culpa,
+          harum saepe. Tempora nesciunt temporibus non tempore. Ratione
+          inventore harum veritatis! Tempore qui praesentium eveniet quam culpa
+          dolore fugiat consequuntur voluptas natus necessitatibus beatae
+          architecto dolores provident nam, earum minima sunt, laborum quae!
+        </p>
+        <div class="row mt-3">
+          <div class="col contact-items" id="contact-1">
+            <img src="assets/facebook-color-svgrepo-com.svg" alt="facebook-icon">
+            <p>Krypton Blanc</p>
+          </div>
+          <div class="col  contact-items" id="contact-2">
+            <img src="assets/twitter-color-svgrepo-com.svg" alt="twitter-icon">
+            <p>@ichbinVerr_15</p>
+          </div>
+          <div class="col   contact-items" id="contact-3">
+            <img src="assets/telegram-svgrepo-com.svg" alt="tele-icon">
+            <p>@Vermilion</p>
+          </div>
+          <div class="col  contact-items" id="contact-4">
+            <img src="assets/instagram-1-svgrepo-com.svg"  alt="instagram-icon">
+            <p>@ichbin_verr</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-12 col-md-5">
+        <form class="form" onsubmit="submitForm(event)">
+          <div class="mb-3">
+            <label for="inpt-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inpt-name" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="inpt-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inpt-email" placeholder="name@gmail.com">
+          </div>
+          <div class="mb-3 ">
+            <label for="inpt-message" class="form-label">Message</label>
+            <input type="text" class="form-control" id="inpt-message">
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="innndex.js"></script>
+  </body>
+</html>
